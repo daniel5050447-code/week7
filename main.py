@@ -39,7 +39,7 @@ from google.genai import types
 # ───────────────────────── 설정 ─────────────────────────
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
 API_KEY = os.getenv("API_KEY", "")                       # 비어 있으면 인증 생략
-LLM_MODEL = os.getenv("LLM_MODEL", "gemini-2.5-flash")
+LLM_MODEL = os.getenv("LLM_MODEL", "gemini-3.8-flash")  # 2.5-flash는 신규 사용자에게 종료됨
 EMBED_MODEL = os.getenv("EMBED_MODEL", "gemini-embedding-001")
 EMBED_DIM = int(os.getenv("EMBED_DIM", "768"))
 INDEX_TYPE = os.getenv("INDEX_TYPE", "flat").lower()     # flat: IndexFlatL2 / hnsw: IndexHNSWFlat
